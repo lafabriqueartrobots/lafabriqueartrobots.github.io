@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La Fabrique Art Robots</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #0f0f0f;
+  color: #f5f5f5;
+}
+
+/* NAV */
+nav {
+  position: fixed;
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  background: rgba(0,0,0,0.4);
+  backdrop-filter: blur(10px);
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1519710164239-da123dc03ef4') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 4em;
+  margin: 0;
+}
+
+.hero p {
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 30px;
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: white;
+  color: black;
+}
+
+/* SECTIONS */
+section {
+  padding: 100px 40px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* TITRES */
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+/* GALERIE */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 40px;
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <div>La Fabrique</div>
+  <div>
+    <a href="index.html">Accueil</a>
+    <a href="galerie.html">Galerie</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div>
+    <h1>La Fabrique Art Robots</h1>
+    <p>Créations artistiques en bois</p>
+    <a href="#galerie" class="btn">Explorer</a>
+  </div>
+</div>
+
+<!-- INTRO -->
+<section>
+  <h2>Une matière vivante</h2>
+  <p>
+    Le bois porte en lui une histoire, une texture, une âme.
+    Chaque création révèle cette beauté naturelle à travers un travail artisanal exigeant.
+  </p>
+</section>
+
+<!-- GALERIE -->
+<section id="galerie">
+  <h2>Créations</h2>
+
+  <div class="gallery">
+    <img src="images/C_Little_Medium_GC_Brun.jpg">
+    <img src="images/C_Bidibot_Medium_GC_Vert.jpg">
+    <img src="images/C_Little_Medium_GC_Rouge.jpg">
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section>
+  <h2>Contact</h2>
+  <p>Email : lafabrique.art.robots@gmail.com</p>
+  <p>Instagram : @tonatelier</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © 2026 La Fabrique Art Robots
+</footer>
+
+</body>
+</html>
